@@ -15,6 +15,8 @@ function fib(number, memoizated = {}) {
   return result;
 }
 
+// Time complexity = 2n => 0(n)
+
 // Test case
 console.log(fib(8, memo));
 console.log(fib(12, memo));
