@@ -22,6 +22,15 @@ Recursivity can be made easier with *memoization*, it just means to keep some da
 
 Sometimes *memoization* it can lead to work duplications.
 
+# Search algorithms
+Search algorithms is how to find something in the most efficient way.
+There's two types of search algorithms, those being:
+- Linear Search.
+- Binary Search.
+
+## Master theorem
+TODO Add this.
+
 # On an interview
 More than likely you're not going to know the best solution at heart, because there's stuff like Math involved in whatever you want to do.
 
