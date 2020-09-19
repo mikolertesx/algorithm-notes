@@ -5,7 +5,7 @@ We need to have an idea of the behavior, not the absolute concept of it, like, i
 
 Looking for patterns is better than deriving the absolute cases of everything.
 
-![algoritmos](./images/timecomplexity.png "titulo")
+![algoritmos](./images/timecomplexity.png "Time Complexity")
 
 # Recursivity
 There's some type of operations that are easier to understand with recursivity.
