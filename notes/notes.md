@@ -31,7 +31,7 @@ There's two types of search algorithms, those being:
   Looks through the elements by dividing it in two. (Only works on onrdered lists).
 
 ## Master theorem
-TODO Add this.
+![Master Theorem](./images/mastertheorem.png "Master Theorem")
 
 # On an interview
 More than likely you're not going to know the best solution at heart, because there's stuff like Math involved in whatever you want to do.
