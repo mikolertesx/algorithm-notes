@@ -30,6 +30,14 @@ There's two types of search algorithms, those being:
 - Binary Search.
   Looks through the elements by dividing it in two. (Only works on onrdered lists).
 
+# Sorting
+Is having an array full of data that isn't sorted, then, efficiently get a new array with the elements in order. Either ascending or descending.
+
+## Bubble sort
+Bubble sort goes through the elements almost twice, it starts with an outer element and then cicle every other element inside, until, it gets to the end of the inner loop and then continues with the outer.
+
+This is better explained or seen through code.
+
 ## Master theorem
 ![Master Theorem](./images/mastertheorem.png "Master Theorem")
 
