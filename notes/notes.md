@@ -26,7 +26,9 @@ Sometimes *memoization* it can lead to work duplications.
 Search algorithms is how to find something in the most efficient way.
 There's two types of search algorithms, those being:
 - Linear Search.
+  Looks through the elements one by one. (Works on unordered and unordered lists).
 - Binary Search.
+  Looks through the elements by dividing it in two. (Only works on onrdered lists).
 
 ## Master theorem
 TODO Add this.
