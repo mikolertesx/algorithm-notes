@@ -38,6 +38,26 @@ Bubble sort goes through the elements almost twice, it starts with an outer elem
 
 This is better explained or seen through code.
 
+With a quadratic complexity this might not be the best solution.
+
+## Quick sort
+This function uses recursion to sort elements.
+
+We start by getting a *pivot* element, and comparing the other elements inside it.
+
+The exit case is getting an empty array.
+
+There are 3 cases for the *pivot* element, whether the element is:
+- Larger
+- Equal
+- Smaller
+
+Then, we use **recursion**, by sending the Larger, Equal and Smaller list of elements into *quicksort* again.
+
+At the end we concatenate the elements, so that we end up with the same list again.
+
+This algorithm ironically has a bigger runtime when it's sorted than when it isn't, it has gains over BubbleSort in most instances.
+
 ## Master theorem
 ![Master Theorem](./images/mastertheorem.png "Master Theorem")
 
