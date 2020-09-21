@@ -20,5 +20,7 @@ function sort(list) {
   return resultList;
 }
 
+// Time Complexity: 0(n^2) => Quadratic.
+
 const sortedList = sort([5, 10, -3, -10, 1, 100, 99]);
 console.log(sortedList);
