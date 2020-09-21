@@ -7,6 +7,11 @@ Looking for patterns is better than deriving the absolute cases of everything.
 
 ![algoritmos](./images/timecomplexity.png "Time Complexity")
 
+# Space Complexity
+As much as time complexity is an issue, space complexity is something you should not forget when working with embedded device as the specs are fairly weak compared to the PC version, and have a very limited amount of memory to work with.
+
+To make matters short, most of the time, factorial functions will have a higher space complexity than their loop based counter'part.
+
 # Recursivity
 There's some type of operations that are easier to understand with recursivity.
 
