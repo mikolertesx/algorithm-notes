@@ -28,3 +28,6 @@ const todoListItems = [
   "order food",
 ];
 console.log(getPermutations(todoListItems));
+
+// Time Complexity: O(n!) => 5 * 4 * 3 * 2 * 1 => 120
+// This is horrible, but there's no better alternative.
