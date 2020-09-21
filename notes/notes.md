@@ -33,14 +33,16 @@ There's two types of search algorithms, those being:
 # Sorting
 Is having an array full of data that isn't sorted, then, efficiently get a new array with the elements in order. Either ascending or descending.
 
-## Bubble sort
+## Algorithms
+
+### Bubble sort
 Bubble sort goes through the elements almost twice, it starts with an outer element and then cicle every other element inside, until, it gets to the end of the inner loop and then continues with the outer.
 
 This is better explained or seen through code.
 
 With a quadratic complexity this might not be the best solution.
 
-## Quick sort
+### Quick sort
 This function uses recursion to sort elements.
 
 We start by getting a *pivot* element, and comparing the other elements inside it.
@@ -57,6 +59,17 @@ Then, we use **recursion**, by sending the Larger, Equal and Smaller list of ele
 At the end we concatenate the elements, so that we end up with the same list again.
 
 This algorithm ironically has a bigger runtime when it's sorted than when it isn't, it has gains over BubbleSort in most instances.
+
+### Merge sort
+Merge sorts grabs a list, and tries to divide the list in 2, by getting the element in the middle.
+
+The exit case of the Merge Sort is whether the list is empty or has only one element it should return itself, or if there's only 2 elements inside, in which case a ternary expression is more than enough to sort it.
+
+First, merge sort slices the list in two by the *floored* middle, then, it uses **recursion** with those two lists, and gets a sorted version back.
+
+Then, with those two sorted lisits, it goes through a loop exhausting the two lists, comparing by each step if the left element is bigger than the right element and pushing into the list the smaller, until it exhausts both of them.
+
+*As always, this is better explained in code*.
 
 ## Master theorem
 ![Master Theorem](./images/mastertheorem.png "Master Theorem")
