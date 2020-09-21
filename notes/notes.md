@@ -21,8 +21,12 @@ The normal logic will be done everytime the base case is not achieved, the base 
 
 Usually recursivity isn't a good practice, as it has to deal with quite an overhead, like allocating memory on the Stack.
 
-## Dynamic programming
+# Sets
+A set is a collection of values which forms an entity itself, that, is basically translated to an *Array* full of unique values, they can't repeat themselves.
 
+In most contexts, an array is a set, with some exceptions of course.
+
+## Dynamic programming
 Recursivity can be made easier with *memoization*, it just means to keep some data around between every process.
 
 Sometimes *memoization* it can lead to work duplications.
