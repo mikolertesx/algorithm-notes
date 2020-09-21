@@ -7,6 +7,28 @@ Looking for patterns is better than deriving the absolute cases of everything.
 
 ![algoritmos](./images/timecomplexity.png "Time Complexity")
 
+# How to solve problems
+First, check what's the input and verify the problem.
+
+Derive a verbal solution about it, it's still about thinking loudly.
+
+Just talking about it helps you come up with a better solution.
+
+Write down a first version (e.g. in pseudo-code).
+
+Then you derive the time complexity and see if you can improve the solution later.
+
+Practice makes perfect, of course!
+
+## Simplify problems.
+Split the problems into smaller problems, e.g.split arrays into chunks, and *possibly* combine it with recursion.
+
+## Debug code.
+Use the console log or break points to verify what's in your (temporary) variables; This is absolutely fine, also in interviews!
+
+## Helper variables.
+Use helper arrays to store immediate results.
+
 # Space Complexity
 As much as time complexity is an issue, space complexity is something you should not forget when working with embedded device as the specs are fairly weak compared to the PC version, and have a very limited amount of memory to work with.
 
@@ -87,3 +109,5 @@ Then, with those two sorted lisits, it goes through a loop exhausting the two li
 More than likely you're not going to know the best solution at heart, because there's stuff like Math involved in whatever you want to do.
 
 The interviewer may just point you to some math you can use for it, and in a real, big project, Google exists.
+
+You should think aloud, not in your mind, don't go straight into coding.
