@@ -28,3 +28,7 @@ const colors = ["blue", "red"];
 const sizes = ["s", "m", "l"];
 const styles = ["round neck", "v neck"];
 console.log(cartProduct(colors, sizes, styles));
+
+// This is a generalized output, since we don't know the length of each array.
+// Time Complexity: O(n^x)
+// Space Complexity: 0(n^x)
