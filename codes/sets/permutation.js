@@ -10,7 +10,7 @@ function getPermutations(options) {
 
   for (let i = 0; i < partialPermutations.length; i++) {
     const partialPermutation = partialPermutations[i];
-    for (let j = 0; j < partialPermutation.length; j++) {
+    for (let j = 0; j <= partialPermutation.length; j++) {
       const permutationInFront = partialPermutation.slice(0, j);
       const permutationAfter = partialPermutation.slice(j);
       permutations.push(
