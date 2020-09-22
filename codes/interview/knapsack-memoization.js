@@ -1,4 +1,8 @@
-function knapsackFn(items, cap, itemIndex) {
+function knapsackFn(items, cap, itemIndex, memo) {
+  if (memo[cap][itemIndex]) {
+    return memo[cap][itemIndex];
+  }
+
   if (cap === 0 || itemIndex < 0) {
     return {
       items: [],
@@ -8,19 +12,22 @@ function knapsackFn(items, cap, itemIndex) {
   }
 
   if (cap < items[itemIndex].weight) {
-    return knapsackFn(items, cap, itemIndex - 1);
+    return knapsackFn(items, cap, itemIndex - 1, memo);
   }
 
   const sackWithItem = knapsackFn(
     items,
     cap - items[itemIndex].weight,
-    itemIndex - 1
+    itemIndex - 1,
+    memo
   );
 
-  const sackWithoutItem = knapsackFn(items, cap, itemIndex - 1);
+  const sackWithoutItem = knapsackFn(items, cap, itemIndex - 1, memo);
 
   const valueWithItem = sackWithItem.value + items[itemIndex].value;
   const valueWithoutItem = sackWithoutItem.value;
+
+  let resultSack;
 
   if (valueWithItem > valueWithoutItem) {
     const updatedSack = {
@@ -28,10 +35,21 @@ function knapsackFn(items, cap, itemIndex) {
       value: sackWithItem.value + items[itemIndex].value,
       weight: sackWithItem.weight + items[itemIndex].weight,
     };
-    return updatedSack;
+    resultStack = updatedSack;
   } else {
-    return sackWithoutItem;
+    resultStack = sackWithoutItem;
   }
+
+  memo[cap][itemIndex] = resultSack;
+
+  return resultStack;
+}
+
+function knapsack(items, cap, index) {
+  const mem = Array.from(Array(cap + 1), () =>
+    Array(items.length).fill(undefined)
+  );
+  return knapsackFn(items, cap, index, mem);
 }
 
 const items = [
@@ -50,29 +68,9 @@ const items = [
     value: 10,
     weight: 3,
   },
-  {
-    name: "c",
-    value: 10,
-    weight: 3,
-  },
-  {
-    name: "c",
-    value: 10,
-    weight: 3,
-  },
-  {
-    name: "c",
-    value: 10,
-    weight: 3,
-  },
-  {
-    name: "c",
-    value: 10,
-    weight: 3,
-  },
 ];
 
 const maxCap = 8;
 
-const sack = knapsackFn(items, maxCap, items.length - 1);
+const sack = knapsack(items, maxCap, items.length - 1);
 console.log(sack);
